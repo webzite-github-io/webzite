@@ -547,7 +547,7 @@ a:visited {
 * 3. banner styles
 */
 .banner-one {
-  background-image: url(../images/banner-bg-1-1.png);
+  background-image: url(https://cdn.statically.io/gh/webzite-github-io/webzite/ef8b7952/gimpo/img/banner-bg-1-1.png);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
@@ -642,7 +642,7 @@ a:visited {
 }
 
 .banner-two {
-  background-image: url(../images/banner-bg-2-2.png);
+  background-image: url(https://cdn.statically.io/gh/webzite-github-io/webzite/ef8b7952/gimpo/img/banner-bg-2-2.png);
   background-repeat: no-repeat;
   background-position: top left;
   padding-top: 237px;
@@ -658,7 +658,7 @@ a:visited {
   bottom: -100px;
   right: -210px;
   min-height: 710px;
-  background-image: url(../images/banner-bg-2-1.png);
+  background-image: url(https://cdn.statically.io/gh/webzite-github-io/webzite/ef8b7952/gimpo/img/banner-bg-2-1.png);
   background-repeat: no-repeat;
   background-position: bottom right;
 }
@@ -1449,7 +1449,7 @@ a:visited {
 */
 .site-footer {
   position: relative;
-  background-image: url(../images/footer-bg-1-1.jpg);
+  background-image: url(https://cdn.statically.io/gh/webzite-github-io/webzite/ef8b7952/gimpo/img/footer-bg-1-1.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1462,7 +1462,7 @@ a:visited {
 }
 
 .site-footer__line {
-  background-image: url(../images/footer-line-1-1.png);
+  background-image: url(https://cdn.statically.io/gh/webzite-github-io/webzite/ef8b7952/gimpo/img/footer-line-1-1.png);
   position: absolute;
   top: -20%;
   left: 20%;
@@ -1485,7 +1485,7 @@ a:visited {
 }
 
 .site-footer__bubble-1 {
-  background-image: url(../images/footer-circle-1-1.png);
+  background-image: url(https://cdn.statically.io/gh/webzite-github-io/webzite/ef8b7952/gimpo/img/footer-circle-1-1.png);
   position: absolute;
   top: 10%;
   left: 10%;
@@ -1508,7 +1508,7 @@ a:visited {
 }
 
 .site-footer__bubble-2 {
-  background-image: url(../images/footer-circle-1-2.png);
+  background-image: url(https://cdn.statically.io/gh/webzite-github-io/webzite/ef8b7952/gimpo/img/footer-circle-1-2.png);
   position: absolute;
   top: -2%;
   right: -2%;
@@ -1783,7 +1783,7 @@ a:visited {
 */
 .inner-banner {
   background-color: #fff;
-  background-image: url(../images/inner-banner-bg-1-1.png);
+  background-image: url(https://cdn.statically.io/gh/webzite-github-io/webzite/ef8b7952/gimpo/img/inner-banner-bg-1-1.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
@@ -1980,7 +1980,7 @@ a:visited {
 }
 
 .cta-three {
-  background-image: url(../images/cta-2-bg-1-1.png);
+  background-image: url(https://cdn.statically.io/gh/webzite-github-io/webzite/ef8b7952/gimpo/img/cta-2-bg-1-1.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
@@ -2453,7 +2453,7 @@ a:visited {
   position: relative;
   background-color: #1bc9f4;
   background-blend-mode: multiply;
-  background-image: url(../images/testi-bg-1-1.jpg);
+  background-image: url(https://cdn.statically.io/gh/webzite-github-io/webzite/ef8b7952/gimpo/img/testi-1-1.jpg);
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
@@ -2575,7 +2575,7 @@ a:visited {
   left: 50%;
   -webkit-transform: translate(-50%, -49%) scaleY(1);
           transform: translate(-50%, -49%) scaleY(1);
-  background-image: url(../images/app-screen-moc.png);
+  background-image: url(https://cdn.statically.io/gh/webzite-github-io/webzite/ef8b7952/gimpo/img/app-screen-moc.png);
   background-position: center center;
   background-repeat: no-repeat;
   width: 423px;
