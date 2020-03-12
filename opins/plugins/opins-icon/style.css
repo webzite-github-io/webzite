@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'opins-icon';
-  src:  url('fonts/opins-icon.eot?2lnbnn');
-  src:  url('fonts/opins-icon.eot?2lnbnn#iefix') format('embedded-opentype'),
-    url('fonts/opins-icon.ttf?2lnbnn') format('truetype'),
-    url('fonts/opins-icon.woff?2lnbnn') format('woff'),
-    url('fonts/opins-icon.svg?2lnbnn#opins-icon') format('svg');
+  src:  url('https://cdn.statically.io/gh/webzite-github-io/webzite/8b0ea027/opins/plugins/opins-icon/fonts/opins-icon.eot');
+  src:  url('https://cdn.statically.io/gh/webzite-github-io/webzite/8b0ea027/opins/plugins/opins-icon/fonts/opins-icon.eot') format('embedded-opentype'),
+    url('https://cdn.statically.io/gh/webzite-github-io/webzite/8b0ea027/opins/plugins/opins-icon/fonts/opins-icon.ttf') format('truetype'),
+    url('https://cdn.statically.io/gh/webzite-github-io/webzite/8b0ea027/opins/plugins/opins-icon/fonts/opins-icon.woff') format('woff'),
+    url('https://cdn.statically.io/gh/webzite-github-io/webzite/8b0ea027/opins/plugins/opins-icon/fonts/opins-icon.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
