@@ -516,12 +516,12 @@ a:visited {
 }
 
 .site-header__header-two .header-navigation ul.navigation-box > li > a {
-  color: #7b7b8c;
+  color: #000000;
 }
 
 .site-header__header-two .header-navigation ul.navigation-box > li.current > a,
 .site-header__header-two .header-navigation ul.navigation-box > li:hover > a {
-  color: #1fbff4;
+  color: #000000;
 }
 
 .site-header__header-two .header-navigation .main-navigation {
