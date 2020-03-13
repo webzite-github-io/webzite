@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'dimon-icon';
-  src:  url('fonts/dimon-icon.eot?ge3xd6');
-  src:  url('fonts/dimon-icon.eot?ge3xd6#iefix') format('embedded-opentype'),
-    url('fonts/dimon-icon.ttf?ge3xd6') format('truetype'),
-    url('fonts/dimon-icon.woff?ge3xd6') format('woff'),
-    url('fonts/dimon-icon.svg?ge3xd6#dimon-icon') format('svg');
+  src:  url('https://cdn.statically.io/gh/webzite-github-io/webzite/d6524481/Dimon/plugins/dimon-icons/fonts/dimon-icon.eot');
+  src:  url('https://cdn.statically.io/gh/webzite-github-io/webzite/d6524481/Dimon/plugins/dimon-icons/fonts/dimon-icon.eot') format('embedded-opentype'),
+    url('https://cdn.statically.io/gh/webzite-github-io/webzite/d6524481/Dimon/plugins/dimon-icons/fonts/dimon-icon.ttf') format('truetype'),
+    url('https://cdn.statically.io/gh/webzite-github-io/webzite/d6524481/Dimon/plugins/dimon-icons/fonts/dimon-icon.woff') format('woff'),
+    url('https://cdn.statically.io/gh/webzite-github-io/webzite/d6524481/Dimon/plugins/dimon-icons/fonts/dimon-icon.svg') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
