@@ -3158,7 +3158,7 @@ h6 {
 	height: 474px;
 	border-radius: 50%;
 	position: relative;
-	background-image: url(../images/shapes/testi-circle.png);
+	background-image: url(https://cdn.statically.io/gh/webzite-github-io/webzite/d04aaf9b/zimed/img/testi-circle.png);
 	background-position: center center;
 	background-repeat: no-repeat;
 	animation-name: tesiMove;
@@ -3333,7 +3333,7 @@ h6 {
 	left: 50%;
 	-webkit-transform: translate(-50%, -49%) scaleY(1);
 	transform: translate(-50%, -49%) scaleY(1);
-	background-image: url(../images/app-shots/app-screen-moc.png);
+	background-image: url(https://cdn.statically.io/gh/webzite-github-io/webzite/d04aaf9b/zimed/img/app-screen-moc.png);
 	background-position: center center;
 	background-repeat: no-repeat;
 	width: 423px;
