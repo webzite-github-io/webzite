@@ -1,0 +1,53 @@
+.brand-one {
+    padding-top: 110px;
+    padding-bottom: 120px;
+    background-color: $thm-gray;
+}
+
+.brand-one__carousel {
+    .owl-item {
+        background-color: #fff;
+    }
+
+    img {
+        opacity: 0.33;
+        transition: all .4s ease;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
+.brand-one__home-two {
+    background-color: $thm-base-color-2;
+    background-image: url(../images/brand-bg-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    position: relative;
+    padding-top: 82.5px;
+    padding-bottom: 82.5px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0.85;
+        background-color: $thm-base-color-2;
+    }
+
+    .brand-one__carousel {
+        .owl-item {
+            background-color: transparent;
+        }
+
+        img {
+            opacity: 1;
+        }
+    }
+}

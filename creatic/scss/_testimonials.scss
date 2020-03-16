@@ -1,0 +1,58 @@
+.testimonials-one {
+    background-image: url(../images/testi-bg-1-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    background-color: $thm-base-color;
+    background-blend-mode: multiply;
+    padding-top: 120px;
+    padding-bottom: 180px;
+
+    position: relative;
+
+    &::before {
+        content: '';
+        opacity: 0.7;
+        background-color: $thm-base-color;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    .container {
+        position: relative;
+
+        @media(min-width: 1200px) {
+            max-width: 1000px;
+        }
+    }
+
+    .owl-carousel .owl-item img {
+        width: auto;
+        display: inline-block;
+    }
+}
+
+.testimonials-one__single {
+    text-align: center;
+}
+
+.testimonials-one__text {
+    margin: 0;
+    color: #fff;
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.testimonials-one__name {
+    margin: 0;
+    font-size: 20px;
+    color: $thm-black;
+    font-weight: bold;
+    margin-top: 45px;
+}

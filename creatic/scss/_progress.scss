@@ -1,0 +1,108 @@
+.progress-one__single {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.circular-progress {
+    width: 138px;
+    height: 138px;
+    position: relative;
+    display: inline-block;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 5px $thm-gray;
+}
+
+.circular-progress>svg {
+    width: 100%;
+    display: block;
+}
+
+
+
+.circular-progress .other-ball {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: $thm-base-color;
+    position: absolute;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 4px;
+        height: 4px;
+        background: #fff;
+        transform: translate(-50%, -50%);
+    }
+}
+
+
+.progress-one__single {
+    margin-bottom: 30px;
+
+
+
+}
+
+
+.progress-one__title {
+    margin: 0;
+    font-size: 24px;
+    line-height: 30px;
+    color: $thm-text-color;
+    color: $thm-black;
+    padding-left: 20px;
+}
+
+.progress-one__top {
+    position: relative;
+}
+
+.progress-one__text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    color: $thm-black;
+    font-style: italic;
+}
+
+.progress-one {
+    padding-top: 110px;
+    padding-bottom: 120px;
+}
+
+.video-one {
+    display: inline-block;
+    position: relative;
+    top: -225px;
+    margin-bottom: -225px;
+}
+
+.video-one__play {
+    width: 74px;
+    height: 74px;
+    background-color: $thm-base-color;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+
+    position: absolute;
+    bottom: 50px;
+    right: 20px;
+    z-index: 91;
+
+    i {
+        font-size: 30px;
+    }
+}

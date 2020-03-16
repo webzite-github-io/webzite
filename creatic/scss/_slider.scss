@@ -1,0 +1,416 @@
+.banner-wrapper {
+    position: relative;
+    width: 100%;
+
+    // IE 10 and 11
+    @media screen and (-ms-high-contrast: active),
+    (-ms-high-contrast: none) {
+        overflow: hidden;
+    }
+
+
+
+
+    .owl-carousel .owl-item img {
+        width: auto;
+    }
+
+    .owl-theme .owl-dots {
+        line-height: 1em;
+        border: none;
+        outline: none;
+        padding: 0;
+        position: absolute;
+        bottom: 60px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .owl-theme .owl-dots .owl-dot {
+        display: flex;
+    }
+
+    .owl-theme .owl-dots .owl-dot span {
+        background-color: #949494;
+        width: 11px;
+        height: 11px;
+        border-radius: 50%;
+        margin: 0 2.5px;
+        vertical-align: middle;
+    }
+
+    .owl-theme .owl-nav {
+        margin: 0;
+    }
+
+    .owl-theme .owl-dots .owl-dot.active span,
+    .owl-theme .owl-dots .owl-dot:hover span {
+        background-color: $thm-base-color;
+    }
+
+}
+
+[class*=banner-carousel] {
+    .owl-nav {
+        display: none;
+    }
+
+
+    &.no-dots {
+        .owl-dots {
+            display: none !important;
+        }
+    }
+}
+
+.banner-one {
+
+
+    .container {
+        position: relative;
+        padding-top: 305px;
+        padding-bottom: 305px;
+    }
+
+
+    &__slide {
+        background-position: left center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+    &__light-color {
+        color: #fff;
+    }
+
+
+
+    &__title {
+        font-family: 'Rage Italic';
+        font-size: 160px;
+        color: #fff;
+        letter-spacing: -0.08em;
+        line-height: 140px;
+        margin: 0;
+        animation-duration: 2s;
+        animation-fill-mode: both;
+        backface-visibility: visible !important;
+    }
+
+    &__text {
+        margin: 0;
+        font-size: 22px;
+        font-weight: bold;
+        color: #fff;
+        line-height: 36px;
+        margin-top: 10px;
+        margin-bottom: 50px;
+        animation-duration: 2s;
+        animation-fill-mode: both;
+        backface-visibility: visible !important;
+    }
+
+    &__btn {
+        animation-duration: 2s;
+        animation-fill-mode: both;
+        backface-visibility: visible !important;
+    }
+
+
+    .active {
+        .banner-one__tag-line {
+            animation-name: fadeInDown;
+        }
+
+        .banner-one__title {
+            animation-name: fadeInDown;
+            animation-delay: .5s;
+        }
+
+        .banner-one__text {
+            animation-name: fadeInUp;
+            animation-delay: 1s;
+        }
+
+        .banner-one__btn {
+            animation-name: fadeInUp;
+            animation-delay: 1.5s;
+        }
+
+        .banner-one__moc {
+            animation-name: fadeInRight;
+            animation-delay: 3s;
+        }
+    }
+
+}
+
+[class*=banner-one__nav-] {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 59px;
+    height: 59px;
+    border-radius: 50%;
+    z-index: 91;
+    background-color: rgba(#fff, .2);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $thm-black;
+
+    transition: all .4s ease;
+
+    &:hover {
+        background-color: #fff;
+        color: $thm-base-color;
+    }
+
+    i {
+        font-size: 24px;
+    }
+}
+
+.banner-one__nav-left {
+    left: 5%;
+}
+
+.banner-one__nav-right {
+    right: 5%;
+}
+
+
+.banner-one__moc {
+    position: absolute;
+    right: 0;
+    top: -4%;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    border: 20px solid #fff;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    backface-visibility: visible !important;
+}
+
+.banner-one__texture-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-size: calc(100% + 70px);
+    background-image: url(../images/banner-texture.png);
+}
+
+.banner-two {
+    .banner-one__slide {
+        position: relative;
+        background-color: $thm-base-color-2;
+        background-blend-mode: multiply;
+        padding-top: 240.5px;
+        padding-bottom: 240.5px;
+
+        &::before {
+            content: '';
+            opacity: 0.75;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: linear-gradient(-42deg, rgb(236, 70, 62) 0%, rgb(255, 148, 9) 100%);
+        }
+    }
+
+    .container {
+        position: relative;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+
+    .banner-one__title {
+        font-size: 140px;
+        line-height: 110px;
+        color: #ffd409;
+        font-family: $thm-font;
+        font-weight: bold;
+        letter-spacing: -0.06em;
+    }
+
+    .banner-one__text {
+        font-size: 24px;
+        font-weight: bold;
+        font-style: italic;
+        margin-top: 35px;
+        margin-bottom: 40px;
+    }
+
+    .banner-one__btn {
+        background-color: #fff;
+        color: $thm-black;
+
+        &:hover {
+            color: #fff;
+            background-color: $thm-black;
+        }
+    }
+
+}
+
+.banner-two__wrapper {
+
+    .owl-theme .owl-dots .owl-dot.active span,
+    .owl-theme .owl-dots .owl-dot:hover span {
+        background-color: $thm-base-color-2;
+    }
+
+    .owl-theme .owl-dots .owl-dot span {
+        background-color: #fff;
+    }
+}
+
+.banner-three {
+    .banner-one__title {
+        font-size: 90px;
+        line-height: 1em;
+        color: #fff;
+        font-weight: bold;
+        font-family: $thm-font;
+        letter-spacing: -0.06em;
+        margin-bottom: 40px;
+    }
+
+    .banner-one__tag-line {
+        font-size: 22px;
+        font-weight: bold;
+        color: #fff;
+        margin: 0;
+        margin-bottom: 20px;
+        animation-duration: 2s;
+        animation-fill-mode: both;
+        backface-visibility: visible !important;
+    }
+
+    .container {
+        padding-top: 326px;
+        padding-bottom: 326px;
+    }
+}
+
+.banner-four__wrapper {
+
+    .owl-theme .owl-dots .owl-dot span {
+        background-color: rgba($color: #fff, $alpha: .5);
+    }
+
+    .owl-theme .owl-dots .owl-dot.active span,
+    .owl-theme .owl-dots .owl-dot:hover span {
+        background-color: $thm-black;
+    }
+
+}
+
+.banner-four {
+    .banner-one__slide {
+        background-color: $thm-base-color;
+        background-blend-mode: multiply;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background-color: $thm-base-color;
+            opacity: 0.4;
+        }
+    }
+
+    .banner-one__title {
+        font-size: 140px;
+        font-family: 'PT Sans';
+        font-weight: bold;
+        letter-spacing: -.06em;
+    }
+
+    .banner-one__btn {
+        background-color: $thm-black;
+    }
+
+    .container {
+        position: relative;
+        padding-top: 374.5px;
+        padding-bottom: 374.5px;
+    }
+}
+
+.banner-five {
+    padding-top: 666px;
+    padding-bottom: 216px;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/slider-5-1.jpg);
+    background-color: $thm-black;
+
+    .title-text {
+        font-size: 120px;
+        line-height: 100px;
+        font-weight: bold;
+        font-style: italic;
+        color: #fff;
+        text-align: right;
+    }
+
+    .title-text .type-wrap {
+        display: inline-block;
+    }
+
+    .title-text .typed {
+        display: inline-block;
+    }
+
+    .title-text .typed-cursor {
+        position: relative;
+        bottom: 0px;
+        opacity: 1;
+        -webkit-animation: blink 0.7s infinite;
+        animation: blink 0.7s infinite;
+    }
+
+    @keyframes blink {
+        0% {
+            opacity: 1;
+        }
+
+        50% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @-webkit-keyframes blink {
+        0% {
+            opacity: 1;
+        }
+
+        50% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+}

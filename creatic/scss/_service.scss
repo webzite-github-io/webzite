@@ -1,0 +1,340 @@
+.service-one {
+    padding-top: 110px;
+    padding-bottom: 120px;
+
+    .owl-carousel .owl-item img {
+        width: auto;
+        display: inline-block;
+    }
+
+    .owl-theme .owl-nav.disabled+.owl-dots {
+        margin-top: 40px;
+    }
+
+    .owl-theme .owl-dots {
+        line-height: 1em;
+        margin-top: 30px;
+    }
+
+    .owl-theme .owl-dots .owl-dot span {
+        background-color: #949494;
+        width: 11px;
+        height: 11px;
+        border-radius: 50%;
+        margin: 0 2.5px;
+    }
+
+    .owl-theme .owl-nav {
+        margin: 0;
+    }
+
+    .owl-theme .owl-dots .owl-dot.active span,
+    .owl-theme .owl-dots .owl-dot:hover span {
+        background-color: $thm-base-color;
+    }
+}
+
+.service-one__carousel .owl-item:nth-child(odd) {
+    background-color: #fff;
+}
+
+.service-one__carousel .owl-item:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.service-one__single {
+    text-align: center;
+    padding-top: 60.5px;
+    padding-bottom: 60.5px;
+}
+
+.service-one__title {
+    color: $thm-black;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 30px;
+    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+
+    a {
+        color: inherit;
+        transition: all .4s ease;
+    }
+}
+
+.service-one__text {
+    margin: 0;
+    font-size: 16px;
+    line-height: 30px;
+    color: #616161;
+    width: 67%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.service-two {
+    padding-top: 110px;
+    padding-bottom: 90px;
+
+    &__single {
+        position: relative;
+        margin-bottom: 70px;
+    }
+}
+
+.service-two__content {
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    background-color: $thm-base-color;
+    width: 100%;
+    max-width: 330px;
+    padding-left: 40px;
+    padding-right: 82px;
+    padding-top: 38.5px;
+    padding-bottom: 38.5px;
+}
+
+.service-two__img {
+    padding-left: 40px;
+
+    >img {
+        width: 100%;
+    }
+}
+
+.service-two__link {
+    width: 42px;
+    height: 42px;
+    background-color: #fff;
+    color: $thm-base-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    transition: all .4s ease;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+
+    &:hover {
+        background-color: $thm-black;
+        color: #fff;
+    }
+}
+
+.service-two__title {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+    color: #fff;
+
+
+    a {
+        color: inherit;
+        transition: all .4s ease;
+
+        &:hover {
+            color: $thm-black;
+        }
+    }
+}
+
+
+.service-one__home-two {
+    position: relative;
+    padding-top: 95px;
+}
+
+.service-one__moc {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.service-one__5-col-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -9px;
+    margin-right: -9px;
+}
+
+.service-one__5-col {
+    flex: 1 1 20%;
+    padding-left: 9px;
+    padding-right: 9px;
+    position: relative;
+    z-index: 9;
+
+    .service-one__single {
+        background-color: #fff;
+        padding: 48.5px 0;
+
+        >img {
+            width: 60px;
+        }
+    }
+
+    .service-one__title {
+        font-size: 20px;
+        line-height: 1.3em;
+        width: 71%;
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+}
+
+
+.service-three {
+    &__single {
+        padding-left: 40px;
+        padding-right: 40px;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        position: relative;
+        z-index: 92;
+        margin-top: -40px;
+        padding-top: 37.5px;
+        padding-bottom: 37.5px;
+        transition: all .4s ease;
+
+        i {
+            color: $thm-base-color;
+            font-size: 46px;
+            transition: all .4s ease;
+        }
+
+        &:hover {
+            background-color: $thm-base-color;
+
+            i,
+            .service-three__title a,
+            .service-three__text {
+                color: #fff;
+            }
+        }
+    }
+
+    &__content {
+        padding-left: 30px;
+    }
+
+    &__text {
+        font-size: 14px;
+        color: #616161;
+        font-weight: bold;
+        margin: 0;
+        line-height: 1em;
+        transition: all .4s ease;
+    }
+
+    &__title {
+        margin: 0;
+        font-size: 20px;
+        line-height: 26px;
+        font-weight: bold;
+        margin-top: 15px;
+        transition: all .4s ease;
+
+        a {
+            color: $thm-black;
+            transition: all .4s ease;
+
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+}
+
+
+.service-four {
+    background-image: url(../images/testi-bg-1-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    background-color: $thm-base-color;
+    background-blend-mode: multiply;
+
+    padding-top: 240px;
+    padding-bottom: 120px;
+
+    position: relative;
+
+    margin-top: -120px;
+
+    &::before {
+        content: '';
+        opacity: 0.7;
+        background-color: $thm-base-color;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    .container {
+        position: relative;
+
+    }
+
+    .block-title__text {
+        color: #ffe9eb;
+    }
+
+    .block-title__title {
+        color: #fff;
+    }
+
+    .block-title__line {
+        margin-bottom: 0;
+    }
+
+    .block-title__line:before,
+    .block-title__line:after {
+        background-color: $thm-black;
+    }
+
+    .cta-two__title a:hover {
+        color: $thm-base-color;
+    }
+}
+
+
+.service-one__home-three {
+    .block-title__line {
+        margin-bottom: 0;
+    }
+
+    &__text {
+        font-size: 20px;
+        line-height: 32px;
+        margin: 0;
+        margin-bottom: 55px;
+    }
+
+    .service-one__5-col-row {
+        margin-left: -5px;
+        margin-right: -5px;
+        padding-left: 20px;
+        margin-top: -10px;
+    }
+
+    .service-one__5-col {
+        flex: 1 1 50%;
+        max-width: 50%;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-top: 10px;
+    }
+}

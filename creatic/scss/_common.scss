@@ -1,0 +1,253 @@
+body {
+    font-family: $thm-font;
+    color: $thm-text-color;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+a:active,
+a:hover,
+a:focus,
+a:visited {
+    text-decoration: none;
+}
+
+.page-wrapper {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    min-width: 300px;
+    overflow: hidden;
+}
+
+@media(min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+.thm-gray-bg {
+    background-color: $thm-gray;
+}
+
+.block-title {
+    margin-bottom: 55px;
+
+    &__title {
+        margin: 0;
+        font-size: 60px;
+        font-weight: 700;
+        color: $thm-black;
+    }
+
+    &__line {
+        margin-top: 20px;
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: space-between;
+        width: 35px;
+
+        &:before,
+        &:after {
+            content: '';
+            height: 3px;
+            background-color: $thm-base-color;
+            border-radius: 1.5px;
+        }
+
+        &:before {
+            width: 10px;
+        }
+
+        &:after {
+            width: 20px;
+        }
+    }
+
+    &__text {
+        margin: 0;
+        font-size: 20px;
+        line-height: 32px;
+        margin-top: -10px;
+    }
+
+    &.text-center {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.thm-btn {
+    border: none;
+    outline: none;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: $thm-base-color;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 15.5px 75.5px;
+    border-radius: 30.5px;
+    transition: all .4s ease;
+
+    &:hover {
+        background-color: $thm-black;
+        color: #fff;
+    }
+}
+
+.post-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+        border-radius: 50%;
+        background-color: $thm-gray;
+        font-size: 15px;
+        font-weight: 600;
+        text-align: center;
+        padding: 8px 19px;
+        color: $thm-black;
+        transition: all .4s ease;
+
+        &:hover,
+        &.active {
+            background-color: $thm-black;
+            color: #fff;
+        }
+
+        +a {
+            margin-left: 15px;
+        }
+    }
+}
+
+.preloader {
+    position: fixed;
+    background-color: #fff;
+    background-image: url(../images/preloader.gif);
+    background-position: center center;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9991;
+}
+
+.scroll-to-top {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    background: $thm-base-color;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 99;
+    text-align: center;
+    transition: all .4s ease;
+    display: none;
+    border-radius: 50%;
+    transition: all .4s ease;
+
+    i {
+        color: #fff;
+        font-size: 18px;
+        line-height: 45px;
+    }
+
+    &:hover {
+        background-color: $thm-black;
+
+        i {
+            color: #fff;
+        }
+    }
+
+
+}
+
+/* Cursor Style */
+
+.cursor {
+    position: absolute;
+    background-color: #fff;
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    z-index: 1;
+    transition: 0.3s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
+        0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity;
+    user-select: none;
+    pointer-events: none;
+    z-index: 10000;
+    transform: scale(1);
+    visibility: hidden;
+}
+
+.cursor {
+    visibility: visible;
+}
+
+.cursor.active {
+    opacity: 0.5;
+    transform: scale(0);
+}
+
+.cursor.hovered {
+    opacity: 0.08;
+}
+
+.cursor-follower {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    z-index: 1;
+    transition: 0.6s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
+        0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity;
+    user-select: none;
+    pointer-events: none;
+    z-index: 10000;
+    visibility: hidden;
+}
+
+.cursor-follower {
+    visibility: visible;
+}
+
+.cursor-follower.active {
+    opacity: 0.7;
+    transform: scale(1);
+}
+
+.cursor-follower.hovered {
+    opacity: 0.08;
+}
+
+.cursor-follower.close-cursor:before {
+    position: absolute;
+    content: '';
+    height: 25px;
+    width: 2px;
+    background: #fff;
+    left: 48%;
+    top: 12px;
+    transform: rotate(-45deg);
+    display: inline-block;
+}
+
+.cursor-follower.close-cursor:after {
+    position: absolute;
+    content: '';
+    height: 25px;
+    width: 2px;
+    background: #fff;
+    right: 48%;
+    top: 12px;
+    transform: rotate(45deg);
+}

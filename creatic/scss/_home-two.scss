@@ -1,0 +1,156 @@
+.home-two {
+
+    .service-two__content,
+    .block-title__line::before,
+    .block-title__line::after,
+    .scroll-to-top,
+    .service-one .owl-theme .owl-dots .owl-dot.active span,
+    .service-one .owl-theme .owl-dots .owl-dot:hover span,
+    .header-navigation ul.navigation-box>li>a>.active-line::before,
+    .testimonials-one::before,
+    .circular-progress .other-ball,
+    .testimonials-one,
+    .team-one__single:hover .team-one__content,
+    .pricing-one__single:hover::before,
+    .pricing-one__line::before,
+    .pricing-one__line::after,
+    .blog-one__link:hover,
+    .search-popup__form button[type="submit"],
+    .site-footer__social a:hover,
+    .header-navigation ul.navigation-box>li>.sub-menu>li:hover>a,
+    .portfolio-popup .thm-btn,
+    .header-navigation ul.navigation-box>li>a>.active-line::after {
+        background-color: $thm-base-color-2;
+    }
+
+    .preloader {
+        background-image: url(../images/preloader-2.gif);
+    }
+
+    .team-one__single:hover .team-one__social a,
+    .team-one__social a:hover {
+        background-color: #ef8904;
+    }
+
+    .blog-one__title a:hover,
+    .blog-one__meta-link,
+    .site-footer__copy a,
+    .service-two__link {
+        color: $thm-base-color-2;
+    }
+
+    .pricing-one__single:hover::before {
+        opacity: 1;
+    }
+
+    .pricing-one__single {
+        background-color: $thm-gray;
+        background-image: none !important;
+    }
+
+    .pricing-one__single::before {
+        background-color: $thm-gray;
+    }
+
+    .pricing-one__period,
+    .pricing-one__title {
+        color: #949494;
+    }
+
+    .pricing-one__amount {
+        color: $thm-black;
+    }
+
+    .pricing-one__list li {
+        color: #616161;
+    }
+
+    .pricing-one__btn {
+        background-color: $thm-base-color-2;
+        color: #fff;
+    }
+
+    .pricing-one__single:hover {
+
+        .pricing-one__line::before,
+        .pricing-one__line::after {
+            background-color: #fff;
+        }
+
+        .pricing-one__period,
+        .pricing-one__title {
+            color: #fff;
+        }
+
+        .pricing-one__amount {
+            color: #fff;
+        }
+
+        .pricing-one__list li {
+            color: #fff;
+        }
+
+        .pricing-one__btn {
+            background-color: #fff;
+            color: $thm-black;
+        }
+    }
+
+    .testimonials-one {
+        padding-bottom: 120px;
+    }
+
+    .testimonials-one::before {
+        opacity: 0.8;
+    }
+
+
+    .contact-one {
+        background-color: $thm-base-color-2;
+        background-image: url(../images/contact-bg-1-1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .block-title__line::before,
+        .block-title__line::after {
+            background-color: #fff;
+        }
+
+        .block-title__text {
+            color: $thm-black;
+        }
+
+        .block-title__title {
+            color: #fff;
+        }
+    }
+
+    .contact-one__form input,
+    .contact-one__form textarea {
+        border-bottom: 2px solid rgba($color: #fff, $alpha: .8);
+        background-color: transparent;
+        padding-top: 0;
+        padding-left: 0;
+        color: #fff;
+
+        @include placeholder() {
+            color: #fff;
+        }
+    }
+
+    .contact-one__btn {
+        background-color: #fff;
+        color: $thm-black;
+
+        &:hover {
+            background-color: $thm-black;
+            color: #fff;
+        }
+    }
+
+    .map-one {
+        padding: 0;
+        height: 524px;
+    }
+
+}

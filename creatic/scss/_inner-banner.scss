@@ -1,0 +1,110 @@
+.inner-banner-one {
+    background-color: $thm-black;
+    background-image: url(../images/inner-banner-1-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top center;
+    text-align: center;
+
+    position: relative;
+    padding-top: 190px;
+    padding-bottom: 110px;
+
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: RGBA($thm-black-rgb, .6);
+    }
+
+    .container {
+        position: relative;
+    }
+
+    .thm-breadcrumb {
+        justify-content: center;
+        margin: 0;
+        margin-top: 30px;
+
+        li {
+
+            &:before,
+            a {
+                color: #fff;
+            }
+
+            &.active a {
+                color: $thm-base-color;
+            }
+        }
+    }
+}
+
+.inner-banner-one__title {
+    margin: 0;
+    color: #fff;
+    font-weight: 700;
+    font-size: 80px;
+}
+
+.inner-banner-two {
+    background-color: $thm-gray;
+    background-image: url(../images/inner-banner-2-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    padding: 126px 0;
+    padding-top: 100px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: $thm-gray;
+        opacity: 0.9;
+    }
+
+    .container {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.inner-banner-two__title {
+    margin: 0;
+    color: $thm-black;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.thm-breadcrumb {
+    display: flex;
+    align-items: center;
+    margin: 0;
+
+    li+li {
+        &:before {
+            content: '-';
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+    }
+
+    a {
+        font-size: 16px;
+        font-weight: bold;
+        color: $thm-text-color;
+    }
+
+    .active a {
+        color: $thm-base-color;
+    }
+}

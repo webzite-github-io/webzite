@@ -1,0 +1,129 @@
+.pricing-one {
+    padding-top: 110px;
+    padding-bottom: 70px;
+
+    &__line {
+        display: flex;
+        justify-content: space-between;
+        width: 35px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        &:before,
+        &:after {
+            content: '';
+            height: 3px;
+            background-color: #fff;
+            border-radius: 1.5px;
+        }
+
+        &:before {
+            width: 10px;
+        }
+
+        &:after {
+            width: 20px;
+        }
+    }
+}
+
+.pricing-one__single {
+    margin-bottom: 50px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    position: relative;
+    background-color: $thm-base-color;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: multiply;
+    transition: background .4s ease, transform .4s ease;
+    transform: translateY(0px);
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: $thm-base-color;
+        opacity: 0.85;
+        transition: background .4s ease, opacity .4s ease, transform .4s ease;
+    }
+
+    &:hover {
+        background-color: #fff;
+        transform: translateY(-10px);
+
+        &::before {
+            background-color: $thm-black;
+            opacity: 0.92;
+        }
+    }
+}
+
+.pricing-one__inner {
+    position: relative;
+}
+
+.pricing-one__period {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 1em;
+}
+
+.pricing-one__title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 1em;
+    margin-bottom: 0px;
+    margin-top: 5px;
+}
+
+.pricing-one__amount {
+    font-size: 60px;
+    letter-spacing: -.06em;
+    font-weight: 400;
+    color: #fff;
+    line-height: 1em;
+    position: relative;
+    display: inline-block;
+    margin-top: 25px;
+
+    span {
+        font-size: 35px;
+        display: inline-block;
+        vertical-align: super;
+        position: absolute;
+        top: -15px;
+        left: -15px;
+    }
+}
+
+.pricing-one__list {
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid rgba(255, 255, 255, .3);
+    padding-bottom: 40px;
+
+    li {
+        color: #fff;
+        font-size: 18px;
+        font-weight: bold;
+
+        +li {
+            margin-top: 25px;
+        }
+    }
+}
+
+.pricing-one__btn {
+    background-color: #fff;
+    color: $thm-black;
+}
